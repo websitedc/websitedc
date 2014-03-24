@@ -12,16 +12,33 @@ and open the template in the editor.
         <link href="view/css/common.css" rel="stylesheet" type="text/css" media="all">
         <link href="view/css/homepage.css" rel="stylesheet" type="text/css" media="all">
         <style type="text/css"></style>
-
     </head>
     <body>
-        <form action="action.php" method="post">
-            <p>Votre nom : <input type="text" name="nom"/></p>
-            <p>Votre prénom : <input type="text" name="prenom"/></p>
-            <p>Votre email : <input type="email" name="email"/></p>
-            <p>Votre Telephone = <input type="tel" name="tel"/></p>
-            <p>Votre entreprise : <input type="text" name="entreprise"/></p>
-            <p><input type="submit" value="OK"></p>
-        </form>
+        <?php
+        include_once 'view/header.php';
+        include_once 'view/navigation.php';
+        ?>
+        <div align=center>
+            <form method=POST action="/controler/contactControler.php" >
+                <input type=hidden name=subject value="Demande de contact">
+                <table>
+                    <tr><td>Votre nom:</td>
+                        <td><input type=text name="name" size=30></td></tr>
+                    <tr><td>Votre prénom:</td>
+                        <td><input type=text name="prenom" size=30></td></tr>
+                    <tr><td>Votre email:</td>
+                        <td><input type=mail name="email" size=30></td></tr>
+                    <tr><td>Votre telephone:</td>
+                        <td><input type=number name="tel" size=15></td></tr>
+                    <tr><td>Votre entreprise:</td>
+                        <td><input type=text name="entreprise" size=30></td></tr>
+                    <tr><td colspan=2>Votre demande:<br>
+                            <textarea COLS=50 ROWS=6 name=comments></textarea>
+                        </td></tr>
+                </table>
+                <br> <input type=submit value=Envoyer> -
+                <input type=reset value=Annuler>
+            </form>
+        </div> 
     </body>
 </html>

@@ -26,9 +26,7 @@ function translate($key) {
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    if (isset($_SESSION['page'])) {
-        
-    }
+    
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "GET") {

@@ -12,7 +12,6 @@ and open the template in the editor.
         <link href="view/css/common.css" rel="stylesheet" type="text/css" media="all">
         <link href="view/css/homepage.css" rel="stylesheet" type="text/css" media="all">
         <style type="text/css"></style>
-
     </head>
     <body>
         <?php

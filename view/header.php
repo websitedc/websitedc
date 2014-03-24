@@ -19,6 +19,6 @@
     </div>
 </div>
 <div><?php
-        translate("PAGE_CONTACT");
+
 ?></div>
 
