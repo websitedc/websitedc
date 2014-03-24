@@ -1,0 +1,20 @@
+/* 
+    Created on : Mar 24, 2014, 8:56:58 PM
+    Author     : laurent
+*/
+
+.ul_footer {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ul_footer li{
+    float: left;
+    margin-right: 6px;
+}
+
+#footer_copyright {
+    display: table;
+    margin: 0px auto;
+}
