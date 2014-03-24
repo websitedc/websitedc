@@ -1,0 +1,2 @@
+PAGE_CONTACT=contactnl
+HOMEPAGE_TITLE=Website Design & conception

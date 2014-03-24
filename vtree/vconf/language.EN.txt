@@ -1,0 +1,2 @@
+PAGE_CONTACT=contact en
+HOMEPAGE_TITLE=Website Design & conception
