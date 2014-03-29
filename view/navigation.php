@@ -5,10 +5,12 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <?php
-    $pages = $translator->get_vtree();
-    foreach ($pages->vtree["navigation"] as $name => $page) {
-        echo "<button name='" . $name . "' onclick='" . $page . "'>" . $name . "</button>";
-    }
-    ?>
+    <ul> 
+        <?php
+        $pages = $translator->get_vtree();
+        foreach ($pages->vtree["navigation"] as $name => $page) {
+            echo "<li><a href='" . $page . "'>" . $name . "</a></li>";
+        }
+        ?>
+    </ul>
 </html>

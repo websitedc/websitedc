@@ -6,17 +6,21 @@
  * @author laurent
  */
 include_once 'model/translator.php';
+include_once 'model/common/validators.php';
 
 global $action, $translator;
 
 $translator = new translator();
+$validator = new validators();
 session_start();
 
 function change_language() {
-    global $translator;
-    if (array_key_exists($_GET['lang'], $translator->get_possible_lang())) {
-        $_SESSION['lang'] = $_GET['lang'];
-        $translator->change_language($_SESSION['lang']);
+    global $translator, $validator;
+
+    if ($validator->lang_validator($_GET['lang'])) {
+        if (array_key_exists($_GET['lang'], $translator->get_possible_lang())) {
+            $translator->change_language($_GET['lang']);
+        }
     }
 }
 
