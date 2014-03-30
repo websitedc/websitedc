@@ -19,17 +19,17 @@ and open the template in the editor.
         include_once 'view/navigation.php';
         ?>
         <div align=center>
-            <form method=POST action="/controler/contactControler.php" >
+            <form method="POST" action="index.php">
                 <input type=hidden name=subject value="Demande de contact">
                 <table>
                     <tr><td>Votre nom:</td>
-                        <td><input type=text name="name" size=30></td></tr>
+                        <td><input type=text name="firstname" size=30></td></tr>
                     <tr><td>Votre prénom:</td>
-                        <td><input type=text name="prenom" size=30></td></tr>
+                        <td><input type=text name="lastname" size=30></td></tr>
                     <tr><td>Votre email:</td>
                         <td><input type=mail name="email" size=30></td></tr>
                     <tr><td>Votre telephone:</td>
-                        <td><input type=number name="tel" size=15></td></tr>
+                        <td><input type=number name="phone" size=15></td></tr>
                     <tr><td>Votre entreprise:</td>
                         <td><input type=text name="entreprise" size=30></td></tr>
                     <tr><td colspan=2>Votre demande:<br>
@@ -39,6 +39,7 @@ and open the template in the editor.
                 <br> <input type=submit value=Envoyer> -
                 <input type=reset value=Annuler>
             </form>
+            <?php                    var_dump($GLOBALS); ?>
         </div> 
     </body>
 </html>

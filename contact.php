@@ -7,7 +7,6 @@ and open the template in the editor.
 <html>
     <?php
     include_once 'controler/mainControler.php';
-
     include_once 'view/contact.php';
     ?>
 </html>

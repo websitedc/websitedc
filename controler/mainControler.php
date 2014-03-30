@@ -29,8 +29,12 @@ function translate($key) {
     echo $translator->translate($key);
 }
 
+function form_contact() {
+    include_once "controler/contactControler.php";
+}
+
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    
+        form_contact();
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
