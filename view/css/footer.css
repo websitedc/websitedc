@@ -10,8 +10,9 @@
 }
 
 .ul_footer li{
+    display: table-cell;
     float: left;
-    margin-right: 6px;
+    margin-right: 12px;
 }
 
 #footer_copyright {
