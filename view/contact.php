@@ -40,5 +40,8 @@ and open the template in the editor.
                 <input type=reset value=Annuler>
             </form>
         </div> 
+        <?php
+        include_once 'view/footer.php';
+        ?>
     </body>
 </html>
