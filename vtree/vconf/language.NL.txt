@@ -1,2 +1,4 @@
-PAGE_CONTACT=contactnl
+PAGE_CONTACT=Contact
+PAGE_HOME=Welkom
 HOMEPAGE_TITLE=Website Design & conception
+LEGAL=Legale afdruk

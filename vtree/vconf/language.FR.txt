@@ -1,3 +1,5 @@
-PAGE_CONTACT=contactfr
+PAGE_CONTACT=Contact
+PAGE_HOME=Accueil
 HOMEPAGE_TITLE=Website Design & conception
 LEGAL_TITLE=mentions légales
+LEGAL=mentions légales

@@ -16,4 +16,5 @@ and open the template in the editor.
     <span id="footer_copyright">
         © Website Design & Conception 2014
     </span>
+    <span id="footer_copyright"><a href="legal.php"><?php translate('LEGAL');?></a></span>
 </div>

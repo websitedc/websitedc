@@ -26,7 +26,7 @@ function change_language() {
 
 function translate($key) {
     global $translator;
-    echo $translator->translate($key);
+    return $translator->translate($key);
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
