@@ -8,8 +8,8 @@ and open the template in the editor.
     <ul> 
         <?php
         $pages = $translator->get_vtree();
-        foreach ($pages->vtree["navigation"] as $name => $page) {
-            echo "<li><a href='" . $page . "'>" . $name . "</a></li>";
+        foreach ($pages->vtree["navigation"] as $name => $page) {            
+            echo "<li><a href='" . $page . "'>" . translate($name) . "</a></li>";
         }
         ?>
     </ul>

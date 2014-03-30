@@ -9,9 +9,10 @@ and open the template in the editor.
         <?php
         $pages = $translator->get_vtree();
         foreach ($pages->vtree["navigation"] as $name => $page) {
-            echo "<li> <a href='" . $page . "'>" . $name . "</a></li>";
+            echo "<li> <a href='" . $page . "'>" . translate($name) . "</a></li>";
         }
         ?>
+        <li><a href="legal.php"><?php echo translate('LEGAL');?></a></li>
     </ul>
     <span id="footer_copyright">
         © Website Design & Conception 2014

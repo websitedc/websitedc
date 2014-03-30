@@ -1,2 +1,4 @@
-PAGE_CONTACT=contact en
+PAGE_CONTACT=Contact
+PAGE_HOME=Home
 HOMEPAGE_TITLE=Website Design & conception
+LEGAL=Legal mentions

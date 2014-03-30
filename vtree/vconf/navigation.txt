@@ -1,2 +1,2 @@
-Home=index.php
-Contact=contact.php
+PAGE_HOME=index.php
+PAGE_CONTACT=contact.php

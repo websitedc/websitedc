@@ -11,6 +11,7 @@ and open the template in the editor.
         <title><?php translate('HOMEPAGE_TITLE'); ?></title>
         <link href="view/css/common.css" rel="stylesheet" type="text/css" media="all">
         <link href="view/css/homepage.css" rel="stylesheet" type="text/css" media="all">
+        <link href="view/css/footer.css" rel="stylesheet" type="text/css" media="all">
         <style type="text/css"></style>
     </head>
     <body>
@@ -18,7 +19,9 @@ and open the template in the editor.
         include_once 'view/header.php';
         include_once 'view/navigation.php';
         ?>
-
         <div id="main_container"></div>
+         <?php
+        include_once 'view/footer.php';
+        ?>
     </body>
 </html>
