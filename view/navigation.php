@@ -5,7 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <ul> 
+    <ul id="navigation_ul"> 
         <?php
         $pages = $translator->get_vtree();
         foreach ($pages->vtree["navigation"] as $name => $page) {            
